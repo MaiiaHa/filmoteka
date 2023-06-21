@@ -1,21 +1,21 @@
 {
-  "name": "icecream",
+  "name": "filmoteka",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://MaiiaHa.github.io/icecream",
+  "homepage": "https://MaiiaHa.github.io/filmoteka",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /icecream/"
+    "build": "parcel build src/*.html --public-url /filmoteka/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaiiaHa/icecream.git"
+    "url": "git+https://github.com/MaiiaHa/filmoteka.git"
   },
   "keywords": [],
   "author": "Maiia Robeiko <maiia.robeiko@ukr.net>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MaiiaHa/icecream/issues"
+    "url": "https://github.com/MaiiaHa/filmoteka/issues"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
