@@ -1,37 +1,105 @@
-<header class="header">
-  <div class="header__container container">
-    <nav class="site-nav">
-      <a href="./index.html" class="logo link">
-        <img class="header__logo-img" src="./images/header/logo.png" alt="ice cream" />
-      </a>
+<section class="header container">
+    <h2 class="visually-hidden">Filmoteka</h2>
+  <div class="header__nav">
+    <nav class="header__main-nav">
+      <ul class="header__list-buttons list">
+        <li class="header__list-item">
+          <a href="./index.html" class="link header__buttn-link home current-page">
+             HOME           
+          </a>     
+        </li>
+        <li class="header__list-item">
+          <a href="./library.html" class="link header__buttn-link libr">
+              MY LIBRARY
+            
+           </a>
+        </li> 
 
-      <ul class="nav-menu list">
-        <li class="nav-menu__item"><a href="./index.html" class="nav-menu__link link">Home</a></li>
-        <li class="nav-menu__item">
-          <a href="#about" class="nav-menu__link link">How it’s made?</a>
+        <!-- <li class="header__list-item">
+          <a href="./index.html" class="link header__buttn-link">
+            <button type="button" class="header__buttn home current-page">
+              HOME
+            </button>
+          </a>
         </li>
-        <li class="nav-menu__item">
-          <a href="#products" class="nav-menu__link link">Our products</a>
-        </li>
-        <li class="nav-menu__item"><a href="#contacts" class="nav-menu__link link">Contact</a></li>
+        <li class="header__list-item">
+          <a href="./library.html" class="link header__buttn-link">
+            <button type="button" class="header__buttn libr">MY LIBRARY</button>
+          </a>
+        </li> -->
       </ul>
 
-      <button
-        class="menu-toggle js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-        data-menu-open
-      >
-        <svg class="menu-icon" width="32" height="32">
-          <use href="./images/icons.svg#icon-menu"></use>
-        </svg>
-      </button>
-      <button class="header__btn js-open-modal" type="button" data-modal="1">
-        Buy now
-        <svg class="mobile-menu__icon" width="12" height="12">
-          <use href="./images/icons.svg#icon-arrow"></use>
-        </svg>
-      </button>
+      <div class="header__search-box">
+        <form class="header__search" id="search-form">
+          <input
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            class="header__input"
+            placeholder="Movie search"
+          />
+          <button class="header__search-buttn">
+            <svg class="header__icon search">
+              <use href="./images/icons-sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+
+        <p class="header__message">
+          Search result not successful. Enter the correct movie name.
+        </p>
+      </div>
     </nav>
+
+    <!-- Sergiy -->
+    <div class="theme-switch">
+      <svg class="theme-switch__icon icon-sun" role="img" aria-label="Sun icon">
+        <use href="./images/background/icons.svg#sun"></use>
+      </svg>
+
+      <div class="theme-switch__control">
+        <input
+          class="theme-switch__toggle"
+          type="checkbox"
+          name="theme"
+          id="theme-switch-toggle"
+          aria-label="Theme switcher"
+        />
+        <label
+          aria-hidden="true"
+          class="theme-switch__track"
+          for="theme-switch-toggle"
+        >
+        </label>
+        <div aria-hidden="true" class="theme-switch__marker"></div>
+      </div>
+
+      <svg class="theme-switch__icon icon-moon" aria-label="Moon icon">
+        <use href="./images/background/icons.svg#moon"></use>
+      </svg>
+    </div>
+    <!-- end -->
+    <div class="header__logo">
+      <a href="./index.html" class="header__logo-link link">
+        <svg class="header__icon film">
+          <use href="./images/icons-sprite.svg#icon-film"></use>
+        </svg>
+
+        <p>Filmoteka</p>
+      </a>
+    </div>
+
+    <div class="movie-switcher">
+      <button
+        class="movie-switcher__button active"
+        data-period="day"
+        id="dayBtn"
+      >
+        Today
+      </button>
+      <button class="movie-switcher__button" data-period="week" id="weekBtn">
+        This Week
+      </button>
+    </div>
   </div>
-</header>
+</section>

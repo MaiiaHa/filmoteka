@@ -1,126 +1,124 @@
-<!-- Gallery section -->
-<section class="gallery">
-  <div class="gallery-container container">
-    <h2 class="visually-hidden">Gallery</h2>
-    <!-- Gallery -->
-    <div class="cf" id="cf">
-      <img
-        class="gallery-image img-first"
-        srcset="
-          ./images/reviews/gal1-mob@1x.jpg   280w,
-          ./images/reviews/gal1-mob@2x.jpg   560w,
-          ./images/reviews/gal1-tab@1x.jpg   704w,
-          ./images/reviews/gal1-tab@2x.jpg  1408w,
-          ./images/reviews/gal1-desk@1x.jpg 1013w,
-          ./images/reviews/gal1-desk@2x.jpg 2026w
-        "
-        sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px,(min-width: 480px) 704px, (min-width: 320px) 280px, 100vw"
-        src="./images/reviews/gal1-mob@1x.jpg"
-        alt="Ice cream cone on the table and berries"
-        width="1013"
-        height="422"
-      />
-      <img
-        class="gallery-image img-second"
-        srcset="
-          ./images/reviews/gal2-mob@1x.jpg   280w,
-          ./images/reviews/gal2-mob@2x.jpg   560w,
-          ./images/reviews/gal2-tab@1x.jpg   704w,
-          ./images/reviews/gal2-desk@1x.jpg 1013w,
-          ./images/reviews/gal2-tab@2x.jpg  1408w,
-          ./images/reviews/gal2-desk@2x.jpg 2026w
-        "
-        sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px,(min-width: 480px) 704px, (min-width: 320px) 280px, 100vw"
-        src="./images/reviews/gal2-mob@1x.jpg"
-        alt="Ice cream cone on the table and berries"
-        width="1013"
-        height="422"
-      />
-      <img
-        class="gallery-image img-third"
-        srcset="
-          ./images/reviews/gal3-mob@1x.jpg   280w,
-          ./images/reviews/gal3-mob@2x.jpg   560w,
-          ./images/reviews/gal3-tab@1x.jpg   704w,
-          ./images/reviews/gal3-desk@1x.jpg 1013w,
-          ./images/reviews/gal3-tab@2x.jpg  1408w,
-          ./images/reviews/gal3-desk@2x.jpg 2026w
-        "
-        sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px,(min-width: 480px) 704px, (min-width: 320px) 280px, 100vw"
-        src="./images/reviews/gal3-mob@1x.jpg"
-        alt="Ice cream cone on the table and berries"
-        width="1013"
-        height="422"
-      />
-    </div>
-    <!-- <div class="cf" id="cf">
-      <img class="" src="./images/reviews/gal2-desk@1x.jpg" />
-      <img class="" src="./images/reviews/gal1-desk@1x.jpg" />
-    </div> -->
-
-    <!-- Slider main container -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <!-- Slide 1 -->
+<section class="section-gallery">
+  <h2 class="visually-hidden">Gallery</h2>
+  <div class="container container-gallery">
+    <ul class="gallery list">
+      <li class="gallery__item">
+        <a href="" class="gallery__link link">
           <img
-            class="reviewer-photo"
-            srcset="./images/reviews/rev1-desk@1x.png 1x, ./images/reviews/rev1-desk@2x.png 2x"
-            src="./images/reviews/rev1-desk@1x.png"
-            alt="Emily, Los Angeles"
-            width="85"
-            height="85"
+            class="gallery__image "
+            src="./images/demo-image/img1.jpg"
+            alt=""
+            data-id=""
+            loading="lazy"
+            width="395"
+            height="574"
           />
-          <p class="review">
-            I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In
-            addition, you have beautiful serving, cozy atmosphere and polite staff.
-          </p>
-          <p class="reviewer">Emily, Los Angeles</p>
-        </div>
-        <div class="swiper-slide">
-          <!-- Slide 2 -->
-          <img
-            class="reviewer-photo"
-            srcset="./images/reviews/rev2-desk@1x.png 1x, ./images/reviews/rev2-desk@2x.png 2x"
-            src="./images/reviews/rev2-desk@1x.png"
-            alt="Bryan, New-York"
-            width="85"
-            height="85"
-          />
-          <p class="review">
-            Every day we come to you with friends after classes in college. We love your ice cream
-            and casual atmosphere!
-          </p>
-          <p class="reviewer">Bryan, New-York</p>
-        </div>
-        <div class="swiper-slide">
-          <!-- Slide 3 -->
-          <img
-            class="reviewer-photo"
-            srcset="./images/reviews/rev3-desk@1x.png 1x, ./images/reviews/rev3-desk@2x.png 2x"
-            src="./images/reviews/rev3-desk@1x.png"
-            alt="Diana, Chicago"
-            width="85"
-            height="85"
-          />
-          <p class="review">
-            Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the
-            excellent service - always served politely and quickly!
-          </p>
-          <p class="reviewer">Diana, Chicago</p>
-        </div>
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
+          <div class="info">
+          <h3 class="info__item">greyhound</h3>
+          <div class="info-detail">
 
-      <!-- If we need navigation buttons -->
-      <!-- <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div> -->
+            <p class="info-detail__item">Drama, Ation</p>
+            <p class="info-detail__item">2020<span class="info-detail__rating">&#9733;</span><span class="film-rating">7.1</span></p>
+            <button class="btn-gallery__delete "  type="button"><img class="btn__img" src="./images/library-img/bin.png" alt="" width="10"></button>
 
-      <!-- If we need scrollbar -->
-      <!-- <div class="swiper-scrollbar"></div> -->
-    </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="gallery__item">
+        <a href="" class="gallery__link link">
+          <img
+            class="gallery__image"
+            src="./images/demo-image/img2.jpg"
+            alt=""
+            loading="lazy"
+            width="395"
+            height="574"
+          />
+          <div class="info">
+          <h3 class="info__item"></h3>
+          <div class="info-detail">
+            <p class="info-detail__item">greyhound</p>
+            <p class="info-detail__item">Drama, Ation</p>
+          </div>
+        </a>
+      </li>
+
+      <li class="gallery__item">
+        <a href="" class="gallery__link link">
+          <img
+            class="gallery__image"
+            src="./images/demo-image/img3.jpg"
+            alt=""
+            loading="lazy"
+            width="395"
+            height="574"
+          />
+          <div class="info">
+          <h3 class="info__item"></h3>
+          <div class="info-detail">
+            <p class="info-detail__item">greyhound</p>
+            <p class="info-detail__item">Drama, Ation</p>
+          </div>
+        </a>
+      </li>
+
+      <li class="gallery__item">
+        <a href="" class="gallery__link link">
+          <img
+            class="gallery__image"
+            src="./images/demo-image/img4.jpg"
+            alt=""
+            loading="lazy"
+            width="395"
+            height="574"
+          />
+          <div class="info">
+          <h3 class="info__item"></h3>
+          <div class="info-detail">
+            <p class="info-detail__item">greyhound</p>
+            <p class="info-detail__item">Drama, Ation</p>
+          </div>
+        </a>
+      </li>
+
+      <li class="gallery__item">
+        <a href="" class="gallery__link link">
+          <img
+            class="gallery__image"
+            src="./images/demo-image/img5.jpg"
+            alt=""
+            loading="lazy"
+            width="395"
+            height="574"
+          />
+          <div class="info">
+          <h3 class="info__item"></h3>
+          <div class="info-detail">
+            <p class="info-detail__item">greyhound</p>
+            <p class="info-detail__item">Drama, Ation</p>
+          </div>
+        </a>
+      </li>
+
+      <li class="gallery__item">
+        <a href="" class="gallery__link link">
+          <img
+            class="gallery__image"
+            src="./images/demo-image/img6.jpg"
+            alt=""
+            loading="lazy"
+            width="395"
+            height="574"
+          />
+          <div class="info">
+          <h3 class="info__item"></h3>
+          <div class="info-detail">
+            <p class="info-detail__item">greyhound</p>
+            <p class="info-detail__item">Drama, Ation</p>
+          </div>
+        </a>
+      </li>
+    </ul>
   </div>
 </section>

@@ -6,16 +6,30 @@ body {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
 
-  background-image: url(../images/body/bg_mob.svg);
+  background-color: var(--bg-cl);
+  @include fonts(20px, 24px, 500, 0.02em);
+
+  // font-weight: 500;
+  // font-size: 20px;
+  // line-height: calc(24 / 20);
 
   @include mq(tablet) {
-    background-image: url(../images/body/bg_tab.svg);
+    // background-image: url(../images/body/bg_tab.svg);
   }
 
   @include mq(desktop) {
-    background-image: url(../images/body/bg_desk.svg);
+    // background-image: url(../images/body/bg_desk.svg);
   }
-
-  font-size: 16px;
-  line-height: calc(28 / 16);
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+

@@ -17,8 +17,7 @@ img {
 
 .link {
   text-decoration: none;
-  color: currentColor;
-  cursor: url(../images/cursor.png), auto;
+  cursor: pointer;
 }
 
 .list {
@@ -27,9 +26,14 @@ img {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
   display: block;
-  cursor: url(../images/cursor.png), auto;
+  cursor: pointer;
   border: none;
-  border-radius: 10px;
+  border-radius: var(--btn-radius);
+  transition: color var(--trns-fast), background-color var(--trns-fast);
 }

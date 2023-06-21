@@ -1,32 +1,28 @@
 @import './common';
+@import './example';
 
 // utils styles
+@import './utils/decimals';
 @import './utils/variables';
 @import './utils/v-hidden';
-@import './utils/animations';
-@import './utils/placeholders';
-@import './utils/mixins';
+@import './utils/mixin';
 
-// base styles
+//base styles
 @import './base/base';
 @import './base/reset';
-@import './base/typography';
 
-// components styles
-@import './components/section';
-@import './components/container';
-@import './components/buttons';
-
-@import './components/header';
-@import './components/hero';
-@import './components/products';
-
-@import './components/about';
-@import './components/advantages';
-
-@import './components/gallery';
-@import './components/contacts';
+//components
+@import './components/_header';
 @import './components/footer';
+@import './components/pagination';
+@import './components/container';
+@import './components/library-gallery';
 @import './components/modal';
-@import './components/form/module';
-@import './components/menu';
+@import './components/scrollUp';
+@import './components/container-gallery';
+
+@import './components/team-modal';
+@import './components/loader';
+@import './components/filter';
+@import './components/themeSwitcher';
+@import './components/preloader.scss';
